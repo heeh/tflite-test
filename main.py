@@ -17,7 +17,7 @@ im = cv2.imread("buggy_image_2.jpg")  # 1920x1080
 im_rgb = cv2.cvtColor(im, cv2.COLOR_BGR2RGB)
 
 # Crop center
-crop_im = im[0:1080, 420:1500]  # 1080x1080
+crop_im = im_rgb[0:1080, 420:1500]  # 1080x1080
 
 # Resize
 im_rgb = cv2.resize(im_rgb, (input_shape[1], input_shape[2]))  # 300x300
