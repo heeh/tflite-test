@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 import cv2
 
-interpreter = tf.lite.Interpreter(model_path="detect.tflite")
+interpreter = tf.lite.Interpreter(model_path="ssd_mobilenet_v1_1_default_1.tflite")
 interpreter.allocate_tensors()
 
 input_details = interpreter.get_input_details()
